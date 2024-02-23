@@ -220,6 +220,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .section-padding-02 {
   padding-top: 120px;
+ 
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3280,6 +3281,7 @@ textarea:-ms-input-placeholder {
   padding-left: 105px;
   padding-right: 105px;
   padding-bottom: 90px;
+  margin-top: 50px;
 }
 
 .techwix-service-section-05 .section-title {
