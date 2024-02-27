@@ -5456,7 +5456,7 @@ textarea:-ms-input-placeholder {
   position: relative;
 }
 
-.testimonial-wrap .testimonial-content-wrap::before {
+/* .testimonial-wrap .testimonial-content-wrap::before {
   position: absolute;
   content: '';
   width: 0;
@@ -5468,7 +5468,7 @@ textarea:-ms-input-placeholder {
   bottom: 215px;
   z-index: 1;
   transform: rotate(90deg);
-}
+} */
 
 .single-testimonial p {
   font-size: 26px;
