@@ -72,6 +72,10 @@ body {
   color: "";
 }
 
+.text-decoration-none{
+  color: #000000;
+}
+
 body[dir="rtl"] {
   text-align: right;
 }
