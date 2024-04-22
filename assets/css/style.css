@@ -222,8 +222,8 @@ textarea:-ms-input-placeholder {
 .section-padding {
   /* padding-top: 120px;
   padding-bottom: 120px; */
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2303,7 +2303,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-hero-section-03 {
-  height: 1020px;
+  height: 650px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -7574,6 +7574,17 @@ textarea:-ms-input-placeholder {
   }
 }
 
+.video-wrap-banner{
+  z-index: -100;
+}
+.custom-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /*--
 /*  03 - Video CSS
 /*----------------------------------------*/
@@ -9111,23 +9122,24 @@ only screen and (max-width: 767px) {
 /*  25.1 - Footer Widget CSS
 /*----------------------------------------*/
 .footer-widget-wrap {
-  padding-top: 70px;
-  padding-bottom: 75px;
+  /* padding-top: 70px;
+  padding-bottom: 75px; */
 }
 
 .footer-widget {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .widget-info {
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .widget-info ul li {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  margin-top: 10px;
+  margin-top: 5px;
+  /* margin-top: 10px; */
 }
 
 .widget-info ul li .info-icon i {
@@ -9329,11 +9341,11 @@ only screen and (max-width: 767px) {
 }
 
 .footer-section-02 .footer-widget-wrap {
-  padding-top: 130px;
+  /* padding-top: 130px; */
 }
 
 .footer-section-03 .footer-widget-wrap {
-  padding-top: 140px;
+  /* padding-top: 140px; */
 }
 
 .footer-section-04 .footer-copyright-area {
