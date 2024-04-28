@@ -367,6 +367,12 @@ textarea:-ms-input-placeholder {
   }
 }
 
+.carousel-indicators .bullet-symbol {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #000; /* Adjust color as needed */
+}
+
+
 .section-title2 .sub-title {
   font-size: 12px;
   line-height: 30px;
@@ -5701,6 +5707,16 @@ textarea:-ms-input-placeholder {
     left: -15px;
   }
 }
+.custom-caption {
+  position: absolute;
+  padding-top: 6.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  top: 10%;
+  right: 15%;
+}
+
 
 @media only screen and (max-width: 991px) {
   .testimonial-wrap {
