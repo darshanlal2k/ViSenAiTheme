@@ -1922,7 +1922,8 @@ textarea:-ms-input-placeholder {
   .main-four-services-mob-resp {
     display: block !important;
   }
-  .main-four-services-mob-resp .section-title .sub-title{
+
+  .main-four-services-mob-resp .section-title .sub-title {
     font-size: 18px !important;
     margin-bottom: 0px !important;
     margin-top: 10px !important;
@@ -1991,7 +1992,8 @@ textarea:-ms-input-placeholder {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
-  .footer-widget-title{
+
+  .footer-widget-title {
     text-align: center;
   }
 
@@ -2014,6 +2016,13 @@ textarea:-ms-input-placeholder {
     color: #c4c5c7;
   }
 
+  .vision .about-content-wrap {
+    padding-top: 0px !important;
+  }
+  .techwix-about-section-05 .about-content-wrap {
+    /* padding-top: 100px; */
+    padding: 10px !important;
+  }
 }
 
 .about-wrap .about-content-wrap .row .visenai-mob-services {
