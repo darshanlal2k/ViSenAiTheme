@@ -1802,8 +1802,8 @@ textarea:-ms-input-placeholder {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
-    top: 10% !important;
-    right: 10% !important;
+    /* top: 10% !important; */
+    left: 3% !important;
   }
 
   .custom-caption .sub-title {
@@ -1929,8 +1929,9 @@ textarea:-ms-input-placeholder {
     margin-top: 10px !important;
   }
 
-  .main-four-services-dek-resp {
-    display: none !important;
+  .main-four-services-dek-resp .coulmn-reverse{
+    display: flex;
+   flex-direction: column-reverse;
   }
 
   .artificialIntelligence .about-wrap .about-content-wrap {
@@ -2230,7 +2231,10 @@ textarea:-ms-input-placeholder {
   border-radius: 35px;
   margin-bottom: 10px;
 }
-
+.hero-content.hero-content-right{
+  left: 15%;
+  transform: translateY(-50%);
+}
 .visenai-hero-section .hero-content .sub-title span {
   display: inline-block;
   height: 35px;
@@ -2562,7 +2566,7 @@ textarea:-ms-input-placeholder {
 }
 
 .visenai-hero-section-03 {
-  height: 650px;
+  height: 850px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2637,7 +2641,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 1199px) {
   .visenai-hero-section-03 {
-    height: 850px;
+    height: auto;
   }
 
   .visenai-hero-section-03 .shape-1 {
@@ -2673,7 +2677,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 991px) {
   .visenai-hero-section-03 {
-    height: 750px;
+    height: auto;
   }
 
   .visenai-hero-section-03 .shape-1 {
@@ -3373,7 +3377,11 @@ textarea:-ms-input-placeholder {
   z-index: 5;
   margin-top: -140px;
 }
-
+@media only screen and (max-width: 991px) {
+  .visenai-service-section-03 .service-wrap-03{
+    margin-top: 0;
+  }
+}
 .visenai-service-section-03 .service-item-03 {
   background: #ffffff;
   border-radius: 10px;
@@ -5968,10 +5976,17 @@ textarea:-ms-input-placeholder {
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
-  top: 20%;
-  right: 15%;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
 }
-
+@media only screen and (min-width: 1400px) {
+  .custom-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
 
 @media only screen and (max-width: 991px) {
   .testimonial-wrap {
