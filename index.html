@@ -483,6 +483,7 @@
                 </div>
                 <!-- About Content Wrap Start -->
                 <div class="about-content-wrap">
+                    <p class="text text-center my-3 mb-5">At ViSenAi, we specialize in harnessing the power of AI, AR, VR, and computer vision to transform businesses. Our expert team provides tailored technology solutions that drive innovation, automate processes, and elevate user experiences. We partner with organizations of all sizes, helping them stay ahead in an ever-evolving digital landscape. Our commitment is to deliver cutting-edge, intelligent solutions that empower our clients to achieve sustainable growth and operational excellence.</p>
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <h3 class="sub-title text-center">Vision</h3>
@@ -501,9 +502,7 @@
                                             <!-- <p class="sub-title">ABOUT US</p> -->
                                             <!-- <h3 class="sub-title">ABOUT US</h3> -->
                                             <!-- <p class="title">WHO WE ARE</p> -->
-                                            <p class="text">To become the favoured technology partner of business
-                                                enterprises of any industry any size and achieve sustainability with
-                                                consistent innovations.</p>
+                                            <p class="text">To lead the future of AI, AR, VR, and computer vision, transforming industries and empowering businesses with innovative, intelligent solutions.</p>
                                             <!-- <p class="text">AI or artificial intelligence is the simulation of human
                                                 intelligence
                                                 processes by machines, especially computer systems. These processes
@@ -537,11 +536,7 @@
                                             <!-- <p class="sub-title">ABOUT US</p> -->
                                             <!-- <h3 class="sub-title">ABOUT US</h3> -->
                                             <!-- <p class="title">WHO WE ARE</p> -->
-                                            <p class="text">To bridge the gap between business and the technology by
-                                                offering
-                                                cutting-edge products and services in AR, VR and AI that result in
-                                                hassle
-                                                free digital transformation.</p>
+                                            <p class="text">We aim to empower businesses by integrating AI, AR, VR, and computer vision technologies to enhance automation, elevate customer experiences, and drive sustainable growth through cutting-edge solutions</p>
                                         </div>
                                         <!-- About Content End -->
                                     </div>
@@ -572,6 +567,7 @@
                 </div>
                 <!-- Solution Content Wrap Start -->
                 <div class="solution-content-wrap">
+                    
                     <div class="row">
                         <div class="col-lg-6">
                             <!-- Solution Item Start -->
@@ -794,8 +790,65 @@
         </div> -->
 
     </div>
-
-    <!-- Testimonial End  -->
+<!-- ContactUs Start -->
+<div class="section visenai-contact-section visenai-contact-section-02 visenai-contact-section-03 section-padding-02">
+    <div class="container">
+        <!-- Contact Wrap Start -->
+        <div class="contact-wrap">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Contact Form Start -->
+                    <div class="contact-form">
+                        <div class="contact-form-wrap">
+                            <div class="heading-wrap text-center">
+                                <span class="sub-title"> request a quote</span>
+                                <h3 class="title">How May We Help You!</h3>
+                            </div>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="single-form">
+                                            <input type="text" id="name" placeholder="Name *" required>
+                                            <span id="name-error" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="single-form">
+                                            <input type="email" id="email" placeholder="Email *" required>
+                                            <span id="email-error" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="single-form">
+                                            <input type="text" id="subject" placeholder="Subject *" required>
+                                            <span id="subject-error" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="single-form">
+                                            <textarea id="message" placeholder="Write A Message" required></textarea>
+                                            <span id="message-error" class="error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-btn">
+                                            <button class="btn" type="button" onclick="handleSubmit()">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                           
+                        </div>
+                    </div>
+                    <!-- Contact Form End -->
+                </div>
+            </div>
+        </div>
+        <!-- Contact Wrap End -->
+    </div>
+</div>
+    <!-- contact Us End  -->
 
     <!-- Footer Section Start -->
     <div class="section footer-section footer-section-03 p-2"
@@ -961,6 +1014,12 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
     <script>
         function scrollToSection(event, sectionId) {
           event.preventDefault();
@@ -976,6 +1035,87 @@
             behavior: 'smooth'
           });
         }
+        </script>
+        
+        <script>
+            function validateEmail(email) {
+                const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                return re.test(String(email).toLowerCase());
+            }
+        
+            function handleSubmit() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+        
+                let isValid = true;
+        
+                // Clear previous error messages
+                document.getElementById('name-error').textContent = '';
+                document.getElementById('email-error').textContent = '';
+                document.getElementById('subject-error').textContent = '';
+                document.getElementById('message-error').textContent = '';
+        
+                if (!name) {
+                    document.getElementById('name-error').textContent = 'Name is required.';
+                    isValid = false;
+                }
+        
+                if (!email) {
+                    document.getElementById('email-error').textContent = 'Email is required.';
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+                    isValid = false;
+                }
+        
+                if (!subject) {
+                    document.getElementById('subject-error').textContent = 'Subject is required.';
+                    isValid = false;
+                }
+        
+                if (!message) {
+                    document.getElementById('message-error').textContent = 'Message is required.';
+                    isValid = false;
+                }
+        
+                if (!isValid) {
+                    return;
+                }
+        
+                const data = {
+                    personalizations: [{
+                        to: [{ email: "venkatesan.p21@gmail.com" }]
+                    }],
+                    from: { email: email },
+                    subject: subject,
+                    content: [{
+                        type: "text/plain",
+                        value: message
+                    }]
+                };
+        
+                fetch('https://api.sendgrid.com/v3/mail/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer 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'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Email sent successfully!');
+                    } else {
+                        alert('Failed to send email.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred while sending the email.');
+                });
+            }
         </script>
 </body>
 

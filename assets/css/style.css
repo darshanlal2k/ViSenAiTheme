@@ -4985,7 +4985,9 @@ textarea:-ms-input-placeholder {
   line-height: 30px;
   margin-top: 30px;
 }
-
+.about-content .text{
+  font-size: 16px;
+}
 .visenai-about-section-04 .about-img-wrap {
   position: relative;
 }
@@ -6555,6 +6557,10 @@ textarea:-ms-input-placeholder {
 /*--
 /*  19 - Contact CSS
 /*----------------------------------------*/
+.visenai-contact-section{
+  padding-top: 2em;
+  height: 800px;
+}
 .visenai-contact-section .contact-wrap {
   background-repeat: no-repeat;
   background-size: contain;
