@@ -6559,7 +6559,7 @@ textarea:-ms-input-placeholder {
 /*----------------------------------------*/
 .visenai-contact-section{
   padding-top: 2em;
-  height: 800px;
+  height: 800px; /* for contactus form height */
 }
 .visenai-contact-section .contact-wrap {
   background-repeat: no-repeat;
