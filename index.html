@@ -1085,31 +1085,21 @@
                 }
         
                 const data = {
-                    personalizations: [{
-                        to: [{ email: "venkatesan.p21@gmail.com" }]
-                    }],
-                    from: { email: email },
-                    subject: subject,
-                    content: [{
-                        type: "text/plain",
-                        value: message
-                    }]
+                    email:email,
+                    name: name,
+                    subject:subject,
+                    description:message
                 };
         
-                fetch('https://api.sendgrid.com/v3/mail/send', {
+                fetch('https://an5fcd1vne.execute-api.ap-south-1.amazonaws.com/sendemail', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': 'Bearer key'
-                    },
+        'Content-Type': 'application/json'
+      },
                     body: JSON.stringify(data)
                 })
                 .then(response => {
-                    if (response.ok) {
-                        alert('Email sent successfully!');
-                    } else {
-                        alert('Failed to send email.');
-                    }
+                    console.log(response);
                 })
                 .catch(error => {
                     console.error('Error:', error);
