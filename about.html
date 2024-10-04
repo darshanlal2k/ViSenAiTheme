@@ -74,11 +74,11 @@
                                 </ul> -->
                             </li>
                             <li>
-                                <a href="#" onclick="scrollToSection(event, 'aboutus')">About Us</a>
+                                <a href="#" >About Us</a>
                             </li>
                             <li>
 
-                                <a href="index.html#ourservices" onclick="scrollToSection(event, 'ourservices')">Our Services</a>
+                                <a href="index.html#ourservices">Our Services</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a href="team.html">Our Team</a></li>
                                     <li><a href="service.html">Service</a></li>
@@ -157,11 +157,11 @@
                       
                         </li>
                         <li>
-                            <a href="#" >About Us</a>
+                            <a href="#" onclick="scrollToSection(event, 'aboutus')">About Us</a>
                         </li>
                
                         <li>
-                            <a href="index.html#ourservices" onclick="scrollToSection(event, 'ourservices')">Our Services</a>
+                            <a href="index.html#ourservices">Our Services</a>
     
                         </li>
                         <li><a href="index.html#contactus">Contact Us</a></li>
@@ -458,7 +458,12 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
+    <script type="text/javascript">
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            $(".flaticon-close").trigger("click");
+          }
+          </script>
 </body>
 
 </html>
