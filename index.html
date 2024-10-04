@@ -1049,6 +1049,7 @@
             }
         
             function handleSubmit() {
+               
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const subject = document.getElementById('subject').value;
@@ -1141,6 +1142,7 @@
                 .then(response => {
                     console.log(response);
                     if(response.status == 200){
+                        $('#contact-form')[0].reset();
                         const successMsg = document.getElementById('success-message');
                         successMsg.style.display =  'block';
                         setTimeout(() => {
